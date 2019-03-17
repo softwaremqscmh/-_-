@@ -1,0 +1,104 @@
+<!--<swiper class='swiper' interval='2000' autoplay='true'>
+  <swiper-item>
+    <image class='swiper-photo' mode='widthFix' src='/image/1.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class='swiper-photo' mode='widthFix' src='/image/2.jpg'></image>
+  </swiper-item>
+  <swiper-item>
+    <image class='swiper-photo' mode='widthFix' src='/image/3.jpg'></image>
+  </swiper-item>
+</swiper>
+<view class='bar'></view>-->
+
+<!--<view>
+  <text class='intro'>计算器类型</text>
+</view>-->
+
+
+<view class='container'>
+
+  <view class='line'>
+    <view class='module' bindtap='general' hover-class='general-h'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/简单计算器1.png'></image>
+      </view>
+      <view class='text-container'>
+        普通计算器
+      </view>
+    </view>
+    <view class='module'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/体锻1.png'></image>
+      </view>
+      <view class='text-container'>
+        体锻计算器
+      </view>
+    </view>
+    <view class='module'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/绩点1.png'></image>
+      </view>
+      <view class='text-container'>
+        绩点计算器
+      </view>
+    </view>
+  </view>
+
+  <view class='line'>
+    <view class='module'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/货币1.png'></image>
+      </view>
+      <view class='text-container'>
+        货币计算器
+      </view>
+    </view>
+    <view class='module'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/倒计时1.png'></image>
+      </view>
+      <view class='text-container'>
+        倒计时计算器
+      </view>
+    </view>
+    <view class='module' bindtap='relationship' hover-class='general-h'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/亲戚朋友1.png'></image>
+      </view>
+      <view class='text-container'>
+        亲戚朋友计算器
+      </view>
+    </view>
+  </view>
+
+  <view class='line'>
+    <view class='module'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/爱情1.png'></image>
+      </view>
+      <view class='text-container'>
+        爱情计算器
+      </view>
+    </view>
+    <view class='module'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/碳排放1.png'></image>
+      </view>
+      <view class='text-container'>
+        碳排放计算器
+      </view>
+    </view>
+        <view class='module'>
+      <view class='icon-container'>
+        <image class='icon' mode='scaleToFill' src='/image/敬请期待.png'></image>
+      </view>
+      <view class='text-container'>
+        敬请期待...
+      </view>
+    </view>
+  
+  </view>
+
+
+</view>

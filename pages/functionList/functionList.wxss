@@ -1,0 +1,63 @@
+.swiper{
+  width: 100%;
+  height: 200px;
+  border-bottom: 10px solid white;
+}
+
+.swiper-photo{
+  width: 100%;
+  height: 150px;
+}
+
+.bar{
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding:0;
+  padding-top: 5px;
+}
+
+.line{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.module{
+  height: 130px;
+  width: 110px;
+  display: flex;
+  flex-direction: column;
+  border:1px solid white;
+  background-color: white;
+}
+
+.intro{
+  padding-left: 20px;
+}
+
+.icon-container{
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+}
+
+.icon{
+  width: 100%;
+  height: 100%;
+}
+
+.general-h{
+  background-color: white
+}
+
+.text-container{
+  font-size: 13px;
+  text-align: center;
+  font-family: 'HappyZcool-2016';
+}
+
