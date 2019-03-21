@@ -4,7 +4,46 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+
+    routers: [
+      {
+        name: '普通计算器',
+        url: '/pages/general/general',
+        icon: '/image/jiandan.png',
+        code: '10'
+      },
+      {
+        name: '体锻计算器',
+        url: '/pages/exercise/exercise',
+        icon: '/image/tiduan.png',
+        code: '11'
+      },
+      {
+        name: '绩点计算器',
+        url: '/pages/gpa/gpa',
+        icon: '/image/jidian.png',
+        code: '10'
+      },
+      {
+        name: '距离计算器',
+        url:'/pages/distance/distance',
+        icon: '/image/juli.png',
+        code: '11'
+      },
+      {
+        name: '亲戚计算器',
+        url: '/pages/relationship/relationship',
+        icon: '/image/qinqi.png',
+        code: '10'
+      },
+      {
+        name: '敬请期待...',
+        icon: '/image/qidai.png',
+        code: '11'
+      },
+
+    ]
+
   },
 
   /**

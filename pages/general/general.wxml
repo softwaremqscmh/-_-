@@ -5,6 +5,7 @@
 </view>
 
 <view class='general-container' bindtap='clickBtn'>
+
   <view class='button-line'>
     <view class='button-container'>
       <button class='button-item-green' id='('>(</button>
@@ -13,7 +14,7 @@
       <button class='button-item-green' id=')'>)</button>
     </view>
     <view class='button-container'>
-      <button class='button-item-orange' id='backspace'>
+      <button class='button-item-orange1' id='backspace'>
       回撤
       </button>
     </view>
@@ -81,4 +82,5 @@
       <button class='button-item-orange' id='='>=</button>
     </view>
   </view>
+
 </view>

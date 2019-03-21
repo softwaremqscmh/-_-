@@ -8,12 +8,12 @@
 
   <!-- 用来显示用户的选项比如我的儿子的爸爸  -->
   <view >
-    <textarea  class="textstyle" value='{{screenData}}' disabled='true' maxlength="34" font-family= 'HappyZcool-2016' />
+    <textarea  class="textstyle"  disabled='true' maxlength="34" font-family= 'HappyZcool-2016' >{{screenData}}</textarea>
   </view>
 
   <!-- 用来显示结果 -->
   <view >
-    <textarea  class="result-style" value='{{result}}' disabled='true' style="text-align:right"     font-family= 'HappyZcool-2016' />
+    <textarea  class="result-style" disabled='true' style="text-align:right"     font-family= 'HappyZcool-2016'>{{result}}</textarea>
   </view>
   
 
@@ -31,7 +31,7 @@
     <view class="btnGroup"  >       
         <view class="item normal" bindtap="clickButton" id="{{id1}}">夫</view>
         <view class="item normal" bindtap="clickButton" id="{{id2}}">妻</view>
-        <view class="item normal" bindtap="clickButton" id="{{id3}}">X</view>
+        <view class="item normal" bindtap="clickButton" id="{{id3}}"><image class='back' mode='scaleToFill' src='/image/backspace.png'/></view>
         <view class="item normal-orange" bindtap="clickButton" id="{{id4}}">AC</view>
     </view>
 

@@ -12,7 +12,8 @@
 }
 
 .button-container{
-  width: 25%;
+  width: 90px;
+  height: 55px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: 'HappyZcool-2016';
@@ -62,12 +63,24 @@
 }
 
 .button-item-orange{
-  width: 80%;
+  width: 72px;
+  height: 46px;
   background-color: #fb7730;
   font-family: 'HappyZcool-2016';
   font-size:18px;
 }
 
+.button-item-orange1{
+  width: 72px;
+  height: 46px;
+  background-color: #fb7730;
+  font-family: 'HappyZcool-2016';
+  font-size:16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
