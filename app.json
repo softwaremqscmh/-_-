@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/functionList/functionList",
+    "pages/general/general",
+    "pages/relationship/relationship",
+    "pages/logs/logs",
+    "pages/gpa/gpa",
+    "pages/ex/ex",
+    "pages/count/count"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87cefa",
+    "navigationBarTitleText": "南小直计算器",
+    "navigationBarTextStyle": "black",
+    "backgroundColor": "#4795ea"
+  }
+}
