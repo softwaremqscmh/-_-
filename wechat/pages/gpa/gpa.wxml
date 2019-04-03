@@ -1,0 +1,57 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar navbar_css">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <input placeholder='课程名称' placeholder-class='placeholder' bindinput='cname' value='{{inputValue}}'></input>
+          <input placeholder='课程学分' placeholder-class='placeholder' bindinput='credit' value='{{inputValue}}'></input>
+          <input placeholder='课程绩点' placeholder-class='placeholder' bindinput='grade' value='{{inputValue}}'></input>
+          <input placeholder='专业课填1，非专业课填2' placeholder-class='placeholder' bindinput='category' value='{{inputValue}}'></input>
+
+          <button class='btn' bindtap='addCourse'>添加课程</button>
+          <button class='btn' bindtap='clear'>清除</button>
+          <view>
+            <view class="left_title">当前GPA:</view>
+            <view class="title">{{data.gpa}}</view>
+
+            <view class="weui-cells__title left_align">课程列表</view>
+
+            <view class="weui-cells weui-cells_after-title">
+              <checkbox-group bindchange="checkboxChange">
+                <label class="weui-cell weui-check__label" wx:for="{{data.data}}" wx:key="value">
+                  <checkbox class="weui-check" value="{{item[1]}}" checked="{{item[1]}}" />
+
+
+
+                  <view class="weui-cell__bd">{{item[0]}}</view>
+                  <view class="weui-cell__bd">{{item[2]}}</view>
+                  <view class="weui-cell__ft">{{item[1]}}</view>
+                </label>
+              </checkbox-group>
+
+            </view>
+
+          </view>
+        </view>
+
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <input placeholder='请输入目标绩点' placeholder-class='placeholder' bindinput='target'></input>
+
+
+          <button class='btn' bindtap='getCredit'>计算</button>
+
+          <text class='remain'>还需{{res}}学分4.0</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

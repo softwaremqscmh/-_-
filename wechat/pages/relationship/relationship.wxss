@@ -1,0 +1,116 @@
+/* pages/welcome/welcome.wxss */
+page{
+    height:100%;
+    font-family: 'HappyZcool-2016';
+}
+.back{
+               
+  justify-content: center;      
+  height: 15px;
+  width: 20px;
+}
+
+.second{
+    background: #e5e5e5;
+    color: #FFFFFF;
+    font-family: 'HappyZcool-2016';
+}
+
+.textstyle {
+  background-color: #FFFFFF;
+  font-size: 27px;
+  width: 100%;
+  height: 25vh;
+  font-family: 'HappyZcool-2016';
+}
+
+.result-style{
+  background-color: #FFFFFF;
+  font-size: 18px;
+  width: 100%;
+  height: 13vh;
+  font-family: 'HappyZcool-2016';
+}
+
+.body-view{
+  height: 7vh;
+  line-height:7vh;
+  background-color: #F5F5F5;
+  font-family: 'HappyZcool-2016';
+}
+
+.btnGroup{
+    display:flex;
+    flex-direction:row;
+    font-family: 'HappyZcool-2016';
+}
+.item+.item2:active {
+  background-color: rgb(235, 226, 226);
+}  
+.item+.item2:before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-right: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+.item+.item2:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.item{
+    width:25%;
+    min-height:10rpx;
+    margin:0rpx;
+    border-radius:0px;
+    text-align:center;
+    line-height:13vh;
+    display:inline-block;
+    font-family: 'HappyZcool-2016';
+}
+.item2{
+    width:50%;
+    min-height:0rpx;
+    margin:0rpx;
+    border-radius:0px;
+    text-align:center;
+    line-height:13vh;
+    display:inline-block;
+    font-family: 'HappyZcool-2016';
+}
+
+.orange{
+    color:#000000;
+    border:solid 0px #F5F5F5;
+    background:#f78d1d;
+    font-family: 'HappyZcool-2016';
+}
+.normal{
+    color:#000000;
+    border:solid 1px #F5F5F5;
+    background:#FFFFFF;
+    font-family: 'HappyZcool-2016';
+}
+.normal-orange{
+    color:#f78d1d;
+    border:solid 1px #F5F5F5;
+    background:#FFFFFF;
+    font-family: 'HappyZcool-2016';
+}
+
+

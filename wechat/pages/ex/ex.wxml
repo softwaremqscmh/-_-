@@ -1,0 +1,91 @@
+<!--index.wxml-->
+<!--列表-->
+
+<view class='list'>
+
+  <!--列表说明项-->
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">性别 </view>
+      <input class="weui-cell__ft ft2" type='digit' placeholder="女1 男2" placeholder-class='placeholder' bindinput='gender'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">年级</view>
+      <input class="weui-cell__ft ft2" type='digit' placeholder="大一大二1，大三大四2" placeholder-class='placeholder' bindinput='grade'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">身高（厘米）</view>
+      <input class="weui-cell__ft ft2" type='digit' placeholder="{{userName}}" placeholder-class='placeholder' bindinput='height'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">体重（千克）</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="{{userName}}" placeholder-class='placeholder' bindinput='weight'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">肺活量(毫升）</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="{{userName}}" placeholder-class='placeholder' placeholder-style='placeholder' bindinput='capacity'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">1000/800米（秒）</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="60*分钟+秒" placeholder-class='placeholder' bindinput='run'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">引体向上/仰卧起坐（个）</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="{{userName}}" placeholder-class='placeholder' bindinput='pull'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">坐位体前屈（厘米）</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="{{userName}}" placeholder-class='placeholder' bindinput='reach'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">立定跳远（厘米）</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="{{userName}}" placeholder-class='placeholder' bindinput='jump'></input>
+    </view>
+  </view>
+
+  <view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell">
+      <view class="weui-cell__bd">50米跑（秒)</view>
+      <input class="weui-cell__ft ft3" type='digit' placeholder="eg:7.5" placeholder-class='placeholder' bindinput='dash'></input>
+    </view>
+  </view>
+
+<view class="{{showOrHidden?'show':'hide'}}">
+    <text class='remainder'>*请输入正确的数据哦</text>
+</view>
+
+  <view class='count'>
+    <button bindtap='count' class="weui-btn" type="primary">计算</button>
+  </view>
+
+    <!--说明-->
+  <view class='explain'>
+    <text>*财大刷段时间为3月20日至5月30日，请及时刷段
+          *每学期刷段数为80km</text>
+  </view>
+  <image class='footer' src="/images/footer.png"></image>
+</view>

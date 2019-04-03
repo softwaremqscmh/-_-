@@ -1,0 +1,38 @@
+<!--pages/count/count.wxml-->
+
+<view class='center'>
+  <!--center-top-->
+  <view class='center-top'>
+    <view class='salary-mouth'>体锻清单</view>
+    <view class='get'>剩余公里数</view>
+    <view class='get2'>
+      <view class='get-salary'>{{remain}}</view>
+      <view class='yuan'>千米</view>
+    </view>
+  </view>
+  <!--center-bottom-->
+  <view class='center-bottom'>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">规定里程数</view>
+      <view class="weui-cell__ft">80千米</view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">个人BMI值</view>
+      <view class="weui-cell__ft">{{bmi}}</view>
+    </view>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">体测成绩</view>
+      <view class="weui-cell__ft git-end">{{score}}分</view>
+    </view>
+    <!--back count-->
+    <view class='count'>
+        <button bindtap='backCount' class="weui-btn" type="primary">返回重算</button>
+    </view>
+  </view>
+
+
+</view>
+
+<view class='footer'>
+  <image class='cloud' src='/images/cloud.png'></image>
+</view>

@@ -1,0 +1,37 @@
+<view class="container">
+
+  <image class='bg2' mode='scaleToFill' src='/images/1.png'></image>
+
+  <view class="moduless">
+    <view class="title"><text>-多喝热水-</text></view>
+
+
+    <view class="modules">
+      <view class="module" wx:for="{{routers1}}" wx:key="name">
+        <navigator url="{{item.url+'?name='+item.name+'&code='+item.code}}">
+          <view class='bg'>
+            <view class="icon">
+              <image src='{{item.icon}}' mode="widthFix" />
+            </view>
+            <text class="text-container">{{item.name}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class="title"><text>-你在干嘛-</text></view>
+    <view class="modules">
+      <view class="module" wx:for="{{routers2}}" wx:key="name">
+        <navigator url="{{item.url+'?name='+item.name+'&code='+item.code}}">
+          <view class='bg'>
+            <view class="icon">
+              <image src='{{item.icon}}' mode="widthFix" />
+            </view>
+            <text class="text-container">{{item.name}}</text>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <image class='bg3' mode='scaleToFill' src='/images/logo.png'></image>
+
+</view>
